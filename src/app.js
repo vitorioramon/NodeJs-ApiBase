@@ -1,8 +1,9 @@
 'use strict'
 
+global.VERSAO_API = '0.0.2';
+
 const express = require('express');
 const bodyParser = require('body-parser');
-const config = require('./config');
 const coreRoute = require('./routes/core-route');
 
 const app = express();

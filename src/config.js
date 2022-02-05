@@ -1,1 +1,0 @@
-global.VERSAO_API = '0.0.1';
