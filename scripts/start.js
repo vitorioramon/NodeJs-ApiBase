@@ -4,7 +4,7 @@ const app = require('../src/app');
 const debug = require('debug')('myDebug:api-server');
 const http = require('http');
 
-const apiPort = 3000;
+const apiPort = process.env.API_PORT;
 app.set('port', apiPort);
 
 const server = http.createServer(app);
