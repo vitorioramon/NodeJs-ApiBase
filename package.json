@@ -1,7 +1,7 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "description": "",
+  "name": "api-server",
+  "version": "0.0.2",
+  "description": "API Server",
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -14,7 +14,7 @@
     "dotenv": "^16.0.0"
   },
   "scripts": {
-    "start": "nodemon scripts/start.js",
+    "start": "node scripts/start.js",
     "dev": "nodemon -r dotenv/config scripts/start.js"
   },
   "keywords": [],
