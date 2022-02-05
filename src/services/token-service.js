@@ -1,7 +1,6 @@
 'use strict';
 
 const jwt = require('jsonwebtoken');
-const respostas = require('../shared/response-shared');
 
 exports.criarToken = async (data) => {
     return jwt.sign(
