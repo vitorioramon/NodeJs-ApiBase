@@ -9,7 +9,7 @@ exports.usuarioLogado = function (req, res, next) {
     if (!token) {
         respostas.naoAutorizado(res);
     } else {
-        jwt.verify(token, global.CHAVE_SEGURANCA, function (error, decoded) {
+        jwt.verify(token, process.env.CHAVE_SEGURANCA, function (error, decoded) {
             if (error) {
                 respostas.tokenInvalido(res);
             } else {
@@ -25,7 +25,7 @@ exports.administrador = function (req, res, next) {
     if (!token) {
         respostas.tokenInvalido(res);
     } else {
-        jwt.verify(token, global.CHAVE_SEGURANCA, function (error, decoded) {
+        jwt.verify(token, process.env.CHAVE_SEGURANCA, function (error, decoded) {
             if (error) {
                 respostas.tokenInvalido(res);
             } else {
