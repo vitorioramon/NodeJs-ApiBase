@@ -1,3 +1,3 @@
 # NodeJs-ApiBase
 
-Aplicação modelo para um Sevidor de REST Api escrito em NodeJs.
+Projeto modelo para um Sevidor de REST Api escrito em NodeJs.
